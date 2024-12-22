@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: Poppins;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  /* position: sticky; */
+}
+.links-middle {
+  width: 500px;
+}
+.links-middle ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.nav-links {
+  text-decoration: none;
+  color: #2cc29c;
+  font-size: 17px;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.nav-links:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 6px 10px rgba(255, 255, 255, 0.8);
+}
+.avatar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  border-radius: 50%;
+  border: #2cc29c 2px solid;
+  margin-left: 10px;
+}
+.bi-cart-dash-fill {
+  font-size: 30px;
+  margin-left: 10px;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.bi-cart-dash-fill:hover {
+  color: #2cc29c;
+  text-decoration: none;
+  text-shadow: 0 6px 10px #2cc29d4f;
+}
+.bi-list {
+  font-size: 30px;
+  margin-left: 10px;
+  display: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.bi-list:hover {
+  color: #2cc29c;
+  text-decoration: none;
+  text-shadow: 0 6px 10px #2cc29d4f;
+}
+@media (max-width: 600px) {
+  .links-middle ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 40px;
+    overflow: hidden;
+    display: block;
+    background-color: rgb(0, 0, 0);
+  }
+  .links-middle ul li {
+    padding-bottom: 30px;
+  }
+  .bi-list {
+    display: block;
+  }
+  #menuList {
+    transition: 0.7s;
+  }
+}
