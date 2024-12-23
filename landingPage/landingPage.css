@@ -10,7 +10,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-around;
-  /* position: sticky; */
+  position: sticky;
 }
 .links-middle {
   width: 500px;
@@ -64,6 +64,87 @@ body {
   text-decoration: none;
   text-shadow: 0 6px 10px #2cc29d4f;
 }
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 12%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-class {
+  max-height: 300px;
+}
+
+.sub-menu {
+  background-color: rgba(255, 255, 255, 0.096);
+  color: white;
+  padding: 17px;
+  margin: 2px;
+  border-radius: 25px;
+}
+.table {
+  text-align: start;
+}
+.table-links a {
+  font-weight: 500;
+  padding-left: 15px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.table-links a:hover {
+  color: #2cc29c;
+  text-shadow: 0 6px 10px rgba(44, 194, 156, 0.3);
+}
+
+td i {
+  margin-left: 12px;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.397);
+}
+td hr {
+  border: none;
+  border-top: 1px solid #e0e0e02c;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.sub-menu-wrap-two {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sub-menu-wrap-two.open-class-two {
+  max-height: 400px;
+}
+.sub-menu-two {
+  background-color: rgba(255, 255, 255, 0.096);
+  padding: 10px 17px 10px 0;
+  border-radius: 35px;
+}
+.table-drop-two {
+  text-align: center;
+}
+.voire-cart {
+  font-weight: 500;
+  padding-left: 15px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.voire-cart:hover {
+  color: #2cc29c;
+  text-shadow: 0 6px 10px rgba(44, 194, 156, 0.3);
+}
+.hr-hr {
+  margin-left: 11px;
+}
+
 @media (max-width: 600px) {
   .links-middle ul {
     position: absolute;
@@ -85,5 +166,32 @@ body {
   }
   #menuList {
     transition: 0.7s;
+  }
+  .avatar {
+    height: 30px;
+  }
+  .sub-menu {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .table-links a {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  td i {
+    font-size: 20px;
+    margin-left: 15.5px;
+  }
+  .sub-menu-two {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .table-drop-two tr td img {
+    height: 40px;
+  }
+  .hr-hr {
+    margin-left: 2px;
   }
 }
