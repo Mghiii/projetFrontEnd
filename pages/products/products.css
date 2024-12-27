@@ -83,8 +83,8 @@ body {
 }
 .sub-menu-wrap {
   position: absolute;
-  top: 100%;
-  right: 12%;
+  top: 7%;
+  right: 11%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
@@ -130,7 +130,7 @@ td hr {
 
 .sub-menu-wrap-two {
   position: absolute;
-  top: 100%;
+  top: 7.3%;
   right: 10%;
   max-height: 0;
   overflow: hidden;
