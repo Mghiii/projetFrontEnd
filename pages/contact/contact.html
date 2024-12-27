@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../ressources/Capture_d_écran_du_2024-12-24_19-48-13-removebg-preview.png"
+    />
+    <title>Click & Buy | About</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img
+              src="../../ressources/image.png"
+              alt="LOGO"
+              class="logo-image"
+              height="60"
+            />
+          </a>
+        </div>
+        <div class="links-middle">
+          <ul id="menuList">
+            <li>
+              <a
+                href="../landingPage/landingPage.html"
+                class="nav-links"
+                id="link1"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-links" href="../products/products.html" id="link2"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="../blogs/blogs.html" class="nav-links" id="link3"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a href="../about/about.html" class="nav-links" id="link4"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="nav-links" id="link5">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="avatar-links">
+          <img
+            src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+            class="avatar"
+            height="40"
+            alt="User Avatar"
+            onclick="avaMenu()"
+          />
+          <i class="bi bi-cart-dash-fill" onclick="toggleDrop()"></i>
+          <i class="bi bi-list" onclick="toggleMenu()"></i>
+        </div>
+        <div class="sub-menu-wrap" id="sub-menu-wrap">
+          <div class="sub-menu">
+            <table class="table">
+              <tr class="table-links">
+                <td class="img-td">
+                  <img
+                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+                    class="avatar"
+                    height="29"
+                    alt="User Avatar"
+                  />
+                </td>
+                <td>
+                  <a href="#">User Profil</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr />
+                </td>
+              </tr>
+              <tr class="table-links">
+                <td>
+                  <i class="bi bi-gear-fill"></i>
+                </td>
+                <td>
+                  <a href="#">Settings</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr />
+                </td>
+              </tr>
+              <tr class="table-links">
+                <td>
+                  <i class="bi bi-person-circle"></i>
+                </td>
+                <td>
+                  <a href="#">Disconnect</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="sub-menu-wrap-two" id="sub-menu-wrap-two">
+          <div class="sub-menu-two">
+            <table class="table-drop-two">
+              <tr>
+                <td>
+                  <img
+                    src="../../ressources/products/asusGammingLap1.png"
+                    height="50px"
+                  />
+                </td>
+                <td>
+                  <p><span style="font-weight: 600">Prix :</span> 7 000 DH</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr class="hr-hr" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../../ressources/products/asusLap1.png"
+                    height="50px"
+                  />
+                </td>
+                <td>
+                  <p><span style="font-weight: 600">Prix :</span> 7 000 DH</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr class="hr-hr" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../../ressources/products/iphone13.png"
+                    height="50px"
+                  />
+                </td>
+                <td>
+                  <p><span style="font-weight: 600">Prix :</span> 7 000 DH</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr class="hr-hr" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span style="font-weight: 600">Total </span></p>
+                </td>
+                <td>
+                  <p style="color: #2cc29c; font-weight: 700">23 000.00 DH</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <hr class="hr-hr" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <a href="#" class="voir-cart">Voir tout</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script src="contact.js"></script>
+  </body>
+</html>
