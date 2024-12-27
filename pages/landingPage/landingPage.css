@@ -221,7 +221,7 @@ td hr {
   color: #2cc29c;
   font-weight: 700;
   font-size: 18px;
-  border: 1px solid #2cc29c;
+  border: 2px solid #2cc29c;
 }
 
 .sav {
@@ -310,7 +310,7 @@ td hr {
   color: #dfdfdd;
   font-weight: 700;
   font-size: 20px;
-  border: 1px solid #dfdfdd;
+  border: 2px solid #dfdfdd;
 }
 
 .learn-button {
@@ -326,7 +326,7 @@ td hr {
 }
 .learn-button:hover {
   background-color: #cbb4a2;
-  color: #000000;
+  color: #111514;
   font-weight: 700;
   font-size: 20px;
   border: none;
