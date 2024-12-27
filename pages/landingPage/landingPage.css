@@ -245,7 +245,7 @@ td hr {
 /* -------------- */
 
 .section-deux {
-  margin: 100px;
+  margin: 100px 100px 50px 100px;
   display: flex;
   justify-content: space-around;
 }
@@ -332,6 +332,73 @@ td hr {
   border: none;
 }
 
+.section-trois {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.desc-content-2 {
+  width: 35%;
+  border-radius: 40px;
+  padding: 20px;
+  background-color: #a5a3a31f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.desc-content-2:hover {
+  transform: translateY(-5px);
+  background-color: #a5a3a36a;
+}
+
+.desc-content-2 h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.desc-content-2 h1 span {
+  color: #b5aaa2;
+}
+
+.desc-content-2 p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.desc-content-2 a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #b5aaa2;
+  text-decoration: none;
+  border: 2px solid #b5aaa2;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.desc-content-2 a:hover {
+  color: #ffffff;
+  background-color: #b5aaa2;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+.image-pub-2 {
+  width: 35%;
+}
+.image-pub-2 img {
+  width: 100%;
+}
+
 @media (max-width: 1000px) {
   .buttons {
     flex-direction: column;
@@ -381,6 +448,16 @@ td hr {
   }
   .button-group {
     margin: 20px 0 15px 0;
+  }
+  .section-trois {
+    flex-direction: column-reverse;
+  }
+  .image-pub-2 {
+    width: 70%;
+  }
+  .desc-content-2 {
+    margin-top: 30px;
+    width: 80%;
   }
 }
 
@@ -503,6 +580,18 @@ td hr {
   .sav:hover {
     font-size: 16px;
   }
+  .desc-content-2 h1 {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .desc-content-2 p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .desc-content-2 a {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 @media (max-width: 550px) {
   .button-group {
@@ -533,5 +622,16 @@ td hr {
   .titDesc p {
     font-size: 14px;
     font-weight: 400;
+  }
+  .desc-content-2 h1 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .desc-content-2 p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .desc-content-2 a {
+    font-size: 14px;
   }
 }
